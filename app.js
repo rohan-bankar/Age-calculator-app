@@ -14,6 +14,7 @@ button.addEventListener('click',(e)=>{
 
     if (isNaN(enterDay) || enterDay === '') {
         document.querySelector(".dayErrorMessage").innerHTML = "Must be date between 1 to 31";
+        document.querySelector(".dayErrorMessage").style.borderColor = "red";
         return; // Exit the function if the day is invalid
     }
     if (isNaN(enterMonth) || enterMonth === '') {
